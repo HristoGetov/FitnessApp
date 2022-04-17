@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Today"
+            android:onClick="onLoad"/>
+
+        <ImageButton
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/back_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="Назад"
+            android:textSize="20dp"
+            android:onClick="pressBack"
+            android:background="@color/purple_500"
+            />
+    </LinearLayout>
+
+</LinearLayout>
